@@ -35,7 +35,6 @@ or string_id == "Stealthsniper_7_desc" and "You now reload assault rifles, light
 or string_id == "Stealthsniper_9" and "Out Of The Shadows And Into The Fray"
 or string_id == "Stealthsniper_9_desc" and "You now receive ##20%## less damage from all damage sources\n\nYou ##cannot have any dodge## chance what-so-ever, ##cannot receive healing## from anything except a doctor bag, and are revived with just ##10%## of the health you usually would have... but your armor now recovers in ##0.4## seconds, no matter the situation\n(Teammate perk deck bonuses or investing in armor regeneration-related skills or the UP YOU GO - ACED skill will NOT effect these particular statistics)\n\nIncreases your headshot damage by an additional ##50%##, resulting in a total of ##75%## headshot damage\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a PAYDAY is increased by ##10%##"
 
---TODO reduce damage of non-turret weapons, possibly add ammo pickups
 or string_id == "TurretSpec_title" and "Turret Specialist"
 or string_id == "TurretSpec_desc" and "Master of turrets, not of anything else."
 or string_id == "TurretSpec_1" and "Turret Packmaster"
@@ -61,6 +60,20 @@ or string_id == "Dozer_7" and "Dozer"
 or string_id == "Dozer_7_desc" and "More armor than a tank, now at ##x10##"
 or string_id == "Dozer_9" and "Dozer Deity"
 or string_id == "Dozer_9_desc" and "With great armor comes great responsibility...  Now at ##x15##."
+
+--TODO: make pistoleer deck
+or string_id == "Pistoleer_title" and "Pistoleer - not fully implemented yet"
+or string_id == "Pistoleer_desc" and "Gunslinger, specializes in pistols (single and akimbo).  Increase dodge, increase damage done with them, increase ammo drops/magazine sizes, increased reload speed each level."
+or string_id == "Pistoleer_1" and "Pistoleer Wannabe"
+or string_id == "Pistoleer_1_desc" and "The pistoleer begins ducking and doding, and the only weapon he's often lucky enough to find is a pistol.  Movement speed is increased, ##5%## dodge bonus."
+or string_id == "Pistoleer_3" and "Pistoleer-in-Training"
+or string_id == "Pistoleer_3_desc" and "##10%## dodge bonus."
+or string_id == "Pistoleer_5" and "Pistoleer Apprentice"
+or string_id == "Pistoleer_5_desc" and "##15%## dodge bonus."
+or string_id == "Pistoleer_7" and "Pistoleer"
+or string_id == "Pistoleer_7_desc" and "##20%## dodge bonus."
+or string_id == "Pistoleer_9" and "Pistoleer Deity"
+or string_id == "Pistoleer_9_desc" and "##30%## dodge bonus."
 
 or text_original(self, string_id, ...)
 end

@@ -2,6 +2,10 @@ local data = UpgradesTweakData._init_pd2_values
 function UpgradesTweakData:_init_pd2_values()
 	data(self, tweak_data)
 
+	self.values.player.movement_speed_multiplier = {
+		1.1,	--default
+		1.5
+	}
 	self.values.player.run_speed_multiplier = {
 		1.25,	--default
 		0.55
@@ -68,7 +72,10 @@ function UpgradesTweakData:_init_pd2_values()
 		1.5,	--default
 		3,
 		1.15,
-		1.3
+		1.3,
+		1.5,
+		1.75,
+		2
 	}
 	self.values.assault_rifle.reload_speed_multiplier = {
 		1.15,	--default
@@ -111,7 +118,11 @@ function UpgradesTweakData:_init_pd2_values()
 	}
 	self.values.pistol.damage_multiplier = {
 		1.5,	--default
-		4
+		10,
+		2,		--pistoleer
+		3,		--pistoleer
+		4,		--pistoleer
+		5		--pistoleer
 	}
 	self.values.weapon.passive_damage_multiplier = {
 		1.05,	--default
@@ -119,7 +130,11 @@ function UpgradesTweakData:_init_pd2_values()
 	}
 	self.values.pistol.magazine_capacity_inc = {
 		5,		--default
-		30
+		50,
+		5,		--pistoleer
+		10,		--pistoleer
+		15,		--pistoleer
+		20		--pistoleer
 	}
 	self.values.ammo_bag.quantity = {
 		1,		--default
@@ -187,7 +202,12 @@ function UpgradesTweakData:_init_pd2_values()
 		0.25,	--default
 		0.3,	--default
 		0,
-		-0.25
+		-0.25,
+		0.05,
+		0.10,
+		0.15,
+		0.2,
+		0.3
 	}
 	self.values.sentry_gun.armor_multiplier = {
 		2.5,	--default
@@ -746,4 +766,177 @@ function UpgradesTweakData:_player_definitions()
 		}
 	}
 	
+	self.definitions.pistoleer_speed = {
+		name_id = "menu_player_movement_speed_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "movement_speed_multiplier",
+			synced = true,
+			category = "player"
+		}
+	}
+	self.definitions.pistoleer_dodge_1 = {
+		category = "feature",
+		name_id = "menu_player_tier_dodge_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "tier_dodge_chance",
+			value = 6
+		}
+	}
+	self.definitions.pistoleer_dodge_2 = {
+		category = "feature",
+		name_id = "menu_player_tier_dodge_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "tier_dodge_chance",
+			value = 7
+		}
+	}
+	self.definitions.pistoleer_dodge_3 = {
+		category = "feature",
+		name_id = "menu_player_tier_dodge_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "tier_dodge_chance",
+			value = 8
+		}
+	}
+	self.definitions.pistoleer_dodge_4 = {
+		category = "feature",
+		name_id = "menu_player_tier_dodge_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "tier_dodge_chance",
+			value = 9
+		}
+	}
+	self.definitions.pistoleer_dodge_5 = {
+		category = "feature",
+		name_id = "menu_player_tier_dodge_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "tier_dodge_chance",
+			value = 10
+		}
+	}
+	self.definitions.pistoleer_reload_speed_multiplier_1 = {
+		name_id = "menu_pistol_reload_speed",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "reload_speed_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_reload_speed_multiplier_2 = {
+		name_id = "menu_pistol_reload_speed",
+		category = "feature",
+		upgrade = {
+			value = 4,
+			upgrade = "reload_speed_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_reload_speed_multiplier_3 = {
+		name_id = "menu_pistol_reload_speed",
+		category = "feature",
+		upgrade = {
+			value = 5,
+			upgrade = "reload_speed_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_reload_speed_multiplier_4 = {
+		name_id = "menu_pistol_reload_speed",
+		category = "feature",
+		upgrade = {
+			value = 6,
+			upgrade = "reload_speed_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_reload_speed_multiplier_5 = {
+		name_id = "menu_pistol_reload_speed",
+		category = "feature",
+		upgrade = {
+			value = 7,
+			upgrade = "reload_speed_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_damage_multiplier_1 = {
+		name_id = "menu_pistol_damage_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "damage_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_damage_multiplier_2 = {
+		name_id = "menu_pistol_damage_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 4,
+			upgrade = "damage_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_damage_multiplier_3 = {
+		name_id = "menu_pistol_damage_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 5,
+			upgrade = "damage_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_damage_multiplier_4 = {
+		name_id = "menu_pistol_damage_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 6,
+			upgrade = "damage_multiplier",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_magazine_capacity_inc_1 = {
+		name_id = "menu_pistol_magazine_capacity_inc",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "magazine_capacity_inc",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_magazine_capacity_inc_2 = {
+		name_id = "menu_pistol_magazine_capacity_inc",
+		category = "feature",
+		upgrade = {
+			value = 4,
+			upgrade = "magazine_capacity_inc",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_magazine_capacity_inc_3 = {
+		name_id = "menu_pistol_magazine_capacity_inc",
+		category = "feature",
+		upgrade = {
+			value = 5,
+			upgrade = "magazine_capacity_inc",
+			category = "pistol"
+		}
+	}
+	self.definitions.pistoleer_magazine_capacity_inc_4 = {
+		name_id = "menu_pistol_magazine_capacity_inc",
+		category = "feature",
+		upgrade = {
+			value = 6,
+			upgrade = "magazine_capacity_inc",
+			category = "pistol"
+		}
+	}
+
 end

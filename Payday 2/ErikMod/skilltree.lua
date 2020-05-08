@@ -261,4 +261,71 @@ table.insert(self.specializations,{--dozer
 	}
 })
 
+--TODO: test/finish this...
+--	lower armor?
+table.insert(self.specializations,{--pistoleer
+	name_id = "Pistoleer_title",
+	desc_id = "Pistoleer_desc",{
+		upgrades = {
+			"pistoleer_speed",
+			"pistoleer_reload_speed_multiplier_1",
+			"pistoleer_dodge_1",
+			"weapon_passive_damage_multiplier_turretteer"
+		},
+		cost = pc1,
+		icon_xy = {1, 4},
+		name_id = "Pistoleer_1",
+		desc_id = "Pistoleer_1_desc"
+	},
+	ps2,{
+		upgrades = {
+			"pistoleer_damage_multiplier_1",
+			"pistoleer_magazine_capacity_inc_1",
+			"pistoleer_reload_speed_multiplier_2",
+			"pistoleer_dodge_2"
+		},
+		cost = pc3,
+		icon_xy = {2, 0},
+		name_id = "Pistoleer_3",
+		desc_id = "Pistoleer_3_desc"
+	},
+	ps4,{
+		upgrades = {
+			"pistoleer_damage_multiplier_2",
+			"pistoleer_magazine_capacity_inc_1",
+			"pistoleer_reload_speed_multiplier_3",
+			"pistoleer_dodge_3"
+		},
+		cost = pc5,
+		icon_xy = {3, 2},
+		name_id = "Pistoleer_5",
+		desc_id = "Pistoleer_5_desc"
+	},
+	ps6,{
+		upgrades = {
+			"pistoleer_damage_multiplier_3",
+			"pistoleer_magazine_capacity_inc_1",
+			"pistoleer_reload_speed_multiplier_4",
+			"pistoleer_dodge_4"
+		},
+		cost = pc7,
+		icon_xy = {5, 2},
+		name_id = "Pistoleer_7",
+		desc_id = "Pistoleer_7_desc"
+	},
+	ps8,{
+		upgrades = {
+			"pistoleer_damage_multiplier_4",
+			"pistoleer_magazine_capacity_inc_1",
+			"pistoleer_reload_speed_multiplier_5",
+			"pistoleer_dodge_5",
+			pdcb
+		},
+		cost = pc9,
+		icon_xy = {1, 0},
+		name_id = "Pistoleer_9",
+		desc_id = "Pistoleer_9_desc"
+	}
+})
+
 end
