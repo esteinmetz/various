@@ -2,7 +2,7 @@
 This is a collection of perkdecks I've built.  All have been lightly tested, let me know what you think.
 
 # Installation
-Download ErikMod folder and copy to your Payday 2 mods folder.  Structure should be "Payday 2\mods\ErikMod\FILES"
+Download ErikMod.zip and extract to your Payday 2 mods folder.  Structure should be "Payday 2\mods\ErikMod\FILES"
 
 # Perk Deck Descriptions
 Name | Purpose | Tested?
