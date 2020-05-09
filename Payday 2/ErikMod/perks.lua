@@ -118,11 +118,11 @@ function UpgradesTweakData:_init_pd2_values()
 	}
 	self.values.pistol.damage_multiplier = {
 		1.5,	--default
-		10,
+		5,
+		1.5,	--pistoleer
 		2,		--pistoleer
-		3,		--pistoleer
-		4,		--pistoleer
-		5		--pistoleer
+		2.5,	--pistoleer
+		3		--pistoleer
 	}
 	self.values.weapon.passive_damage_multiplier = {
 		1.05,	--default
