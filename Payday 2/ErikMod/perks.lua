@@ -203,11 +203,11 @@ function UpgradesTweakData:_init_pd2_values()
 		0.3,	--default
 		0,
 		-0.25,
-		0.05,
-		0.10,
-		0.15,
-		0.2,
-		0.3
+		0.1,	--pistoleer
+		0.2,	--pistoleer
+		0.3,	--pistoleer
+		0.4,	--pistoleer
+		0.5		--pistoleer
 	}
 	self.values.sentry_gun.armor_multiplier = {
 		2.5,	--default
