@@ -61,19 +61,18 @@ or string_id == "Dozer_7_desc" and "More armor than a tank, now at ##x10##"
 or string_id == "Dozer_9" and "Dozer Deity"
 or string_id == "Dozer_9_desc" and "With great armor comes great responsibility...  Now at ##x15##."
 
---TODO: make pistoleer deck
-or string_id == "Pistoleer_title" and "Pistoleer - not fully implemented yet"
+or string_id == "Pistoleer_title" and "Pistoleer"
 or string_id == "Pistoleer_desc" and "Gunslinger, specializes in pistols (single and akimbo).  Increase dodge, increase damage done with them, increase ammo drops/magazine sizes, increased reload speed each level."
 or string_id == "Pistoleer_1" and "Pistoleer Wannabe"
-or string_id == "Pistoleer_1_desc" and "The pistoleer begins ducking and doding, and the only weapon he's often lucky enough to find is a pistol.  Movement speed is increased, ##5%## dodge bonus."
+or string_id == "Pistoleer_1_desc" and "The pistoleer begins ducking and doding, and the only weapon he's often lucky enough to find is a pistol.  Movement speed is increased, ##10%## dodge bonus."
 or string_id == "Pistoleer_3" and "Pistoleer-in-Training"
-or string_id == "Pistoleer_3_desc" and "##10%## dodge bonus."
+or string_id == "Pistoleer_3_desc" and "##20%## dodge bonus."
 or string_id == "Pistoleer_5" and "Pistoleer Apprentice"
-or string_id == "Pistoleer_5_desc" and "##15%## dodge bonus."
+or string_id == "Pistoleer_5_desc" and "##30%## dodge bonus."
 or string_id == "Pistoleer_7" and "Pistoleer"
-or string_id == "Pistoleer_7_desc" and "##20%## dodge bonus."
+or string_id == "Pistoleer_7_desc" and "##40%## dodge bonus."
 or string_id == "Pistoleer_9" and "Pistoleer Deity"
-or string_id == "Pistoleer_9_desc" and "##30%## dodge bonus."
+or string_id == "Pistoleer_9_desc" and "##50%## dodge bonus."
 
 or text_original(self, string_id, ...)
 end

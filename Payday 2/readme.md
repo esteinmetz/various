@@ -7,8 +7,8 @@ Download ErikMod.zip and extract to your Payday 2 mods folder.  Structure should
 # Perk Deck Descriptions
 Name | Purpose | Tested?
 ---- | ------- | -------
-ErikCheat | This is broken...don't use it in multiplayer. | Never
+ErikCheat | This is broken...don't use it in multiplayer. | Yes
 Gazer | This is a stealth sniper deck.  Can tag longer, remotely hack security cameras.  Good with pistols and snipers. | Lightly
 Turret Specialist | Can place more, better turrets.  Gain more ammo.  Do less damage with ALL guns. | Lightly
-Dozer | Slow, heavily armored. | No
-Pistoleer | Quick, more better with pistols.  Bad with non-pistols. | No
+Dozer | Slow, heavily armored. | Lightly
+Pistoleer | Quick, more better with pistols.  Bad with non-pistols. | Lightly
