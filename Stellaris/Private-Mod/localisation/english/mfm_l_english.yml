@@ -15,3 +15,7 @@
  erik_trait_molluscoid:0 "Molluscoids"
  erik_trait_molluscoid_desc:0 "Molluscoids often produce a hard outer shell that can be used in other places."
  erik_trait_molluscoid_tip:0 "Traits specific to Molluscoids"
+
+ erik_trait_avian:0 "Bird People"
+ erik_trait_avian_desc:0 "Birds have millenia of practice with 3d combat, but also have hollow bones."
+ erik_trait_avian_tip:0 "Traits specific to the evil birds."

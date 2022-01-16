@@ -33,3 +33,15 @@ erik_trait_molluscoid = {
 		planet_jobs_alloys_produces_mult = 0.2
 	}
 }
+
+erik_trait_avian = {
+	cost = 1
+	randomized = yes
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class  = { AVI }
+	modifier = {
+		ship_accuracy_add = 10
+		army_health = -0.1
+	}
+}
