@@ -1,0 +1,35 @@
+erik_trait_traditional = {
+	cost = 0
+	randomized = no
+	custom_tooptip = ERIK_TRAIT_TRADITIONAL_TIP
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_quarrelsome" "trait_traditional" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.0001
+	}
+}
+
+erik_trait_arthropod = {
+	cost = 1
+	randomized = yes
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class  = { ART }
+	modifier = {
+		leader_age = -40
+		pop_environment_tolerance = 0.2
+		pop_growth_speed = 0.15
+	}
+}
+
+erik_trait_molluscoid = {
+	cost = 1
+	randomized = yes
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class  = { MOL }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.2
+	}
+}
