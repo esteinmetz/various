@@ -1,0 +1,18 @@
+#NEW Origin for starting on a forge world
+origin_forge_world = {
+	is_origin = yes
+	description = "origin_forge_world_tip"
+
+	potential = { always = yes }
+	possible = {
+		species_archetype = { NOT = { value = BIOLOGICAL } }
+	}
+
+	starting_colony = pc_legendary_forge
+	habitability_preference = pc_molten
+	max_once_global = yes
+
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.1
+	}
+}

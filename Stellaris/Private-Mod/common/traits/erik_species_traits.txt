@@ -1,15 +1,16 @@
+#poorly id'd, but this is a test to try to prioritize slaves for necrophage
 erik_trait_traditional = {
 	cost = 0
 	randomized = no
 	custom_tooptip = ERIK_TRAIT_TRADITIONAL_TIP
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_quarrelsome" "trait_traditional" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.0001
 	}
 }
 
+#NEW Species Traits!!!
 erik_trait_arthropod = {
 	cost = 1
 	randomized = yes
