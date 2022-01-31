@@ -1,0 +1,41 @@
+namespace = namespace_origin_forge_world
+
+country_event = {
+	id = namespace_origin_forge_world.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_forge_world
+	}
+
+	immediate = {
+		#give some tech to generate energy and make the Legendary Forge perk easier to reach
+		give_technology = { tech = tech_mine_betharian	message = no }
+		give_technology = { tech = tech_mining_3	message = no }
+		give_technology = { tech = tech_alloys_2	message = no }
+		give_technology = { tech = tech_mine_living_metal	message = no }
+		give_technology = { tech = tech_volcano	message = no }
+
+		capital_scope = {
+			#add some deposits, only source of energy
+			add_deposit = d_betharian_deposit
+			add_deposit = d_betharian_deposit
+			add_deposit = d_betharian_deposit
+			add_deposit = d_betharian_deposit
+			add_deposit = d_betharian_deposit
+
+			#update default districts to specialty ones
+			remove_all_districts = yes
+			add_district = district_lava_fortress
+			add_district = district_lava_fortress
+			add_district = district_deep_forge
+			add_district = district_super_assembly
+
+			#use custom starting buildings
+			remove_building = building_commercial_zone
+			remove_building = building_machine_assembly_plant
+			add_building = building_betharian_power_plant
+		}
+	}
+}

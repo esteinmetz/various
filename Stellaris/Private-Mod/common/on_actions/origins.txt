@@ -1,0 +1,2 @@
+#Forge World Origin
+on_game_start_country = { events = { namespace_origin_forge_world.1 } }

@@ -1,21 +1,27 @@
 ﻿l_english:
 
- TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT:0 "Each pop with living standards of slavery or better produces £exotic_gases£ §Y$exotic_gases$§! per month."
- TRAIT_LITHOID_SCINTILLATING_EFFECT:0 "Each pop with living standards of slavery or better produces £rare_crystals£ §Y$rare_crystals$§! per month."
- TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT:0 "Each pop with living standards of slavery or better produces £volatile_motes£ §Y$volatile_motes$§! per month."
+ #species traits, patches then my originals
+ TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces £exotic_gases£ §Y$exotic_gases$§! per month."
+ TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces £rare_crystals£ §Y$rare_crystals$§! per month."
+ TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces £volatile_motes£ §Y$volatile_motes$§! per month."
  
- erik_trait_traditional:0 "Erik's Slave Race"
- erik_trait_traditional_desc:0 "This is a test to help prioritize a slave race for neophytes for Necroids."
- erik_trait_traditional_tip:0 "This is a test to help prioritize a slave race for neophytes for Necroids."
+ erik_trait_traditional: "Erik's Slave Race"
+ erik_trait_traditional_desc: "This is a test to help prioritize a slave race for neophytes for Necroids."
+ erik_trait_traditional_tip: "This is a test to help prioritize a slave race for neophytes for Necroids."
 
- erik_trait_arthropod:0 "Arthropods"
- erik_trait_arthropod_desc:0 "Arthropods are resilient and quick breeders, but don't live long."
- erik_trait_arthropod_tip:0 "Traits specific to Arthropods"
+ erik_trait_arthropod: "Arthropods"
+ erik_trait_arthropod_desc: "Arthropods are resilient and quick breeders, but don't live long."
+ erik_trait_arthropod_tip: "Traits specific to Arthropods"
 
- erik_trait_molluscoid:0 "Molluscoids"
- erik_trait_molluscoid_desc:0 "Molluscoids often produce a hard outer shell that can be used in other places."
- erik_trait_molluscoid_tip:0 "Traits specific to Molluscoids"
+ erik_trait_molluscoid: "Molluscoids"
+ erik_trait_molluscoid_desc: "Molluscoids often produce a hard outer shell that can be used in other places."
+ erik_trait_molluscoid_tip: "Traits specific to Molluscoids"
 
- erik_trait_avian:0 "Bird People"
- erik_trait_avian_desc:0 "Birds have millenia of practice with 3d combat, but also have hollow bones."
- erik_trait_avian_tip:0 "Traits specific to the evil birds."
+ erik_trait_avian: "Bird People"
+ erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
+ erik_trait_avian_tip: "Traits specific to the evil birds."
+
+ #origins
+ origin_forge_world: "Forge World"
+ origin_forge_world_desc: "This species evolved on a molten planet, and somehow made it a home."
+ origin_forge_world_tip: ""
