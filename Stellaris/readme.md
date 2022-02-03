@@ -29,12 +29,23 @@ Erik's Slave Race | Minutely add unity, to help focus which necroid slave specie
 Arthropods | Make arthropods breed faster, but have lower lifespans. | erik_trait_arthropod | N/A
 Bird People | Make birds better in space combat, but with a lower army health. | erik_trait_avian | N/A
 Molluscoids | Molluscoids produce more alloys. | erik_trait_molluscoid | Would like to change this to make them passively produce alloys no matter the job.
-Other Change 1 | Increase lithoid passive production from 0.01 to 0.05. | N/A | No new trait.
+
+## New Civics
+
+Name | Description | Notes
+---- | ----------- | -----
+Shepherd | Civic to allow non-xenophobes to use livestock. | 
 
 ## New Origins
+
 Name | Description | Notes
 ---- | ----------- | -----
 Forge World | You begin on a Legendary Forge world. | This is great for minerals, alloys, ships, and robots.  Non-biological species only.
+
+## Other Changes
+
+1. Increase lithoid passive production from 0.01 to 0.05.
+1. Update livestock to allow livestock to fill worker roles.
 
 ## Upcoming changes
 
