@@ -1,0 +1,11 @@
+#make species better at using livestock
+erik_civic_carnivore = {
+	pickable_at_start = yes
+	cost = 0
+
+	modifier = {
+		planet_livestock_consumer_goods_produces_add = 2
+		planet_livestock_food_produces_add = 1
+		planet_jobs_food_produces_mult = -0.2
+	}
+}

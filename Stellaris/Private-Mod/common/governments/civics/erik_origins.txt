@@ -1,7 +1,7 @@
 #NEW Origin for starting on a forge world
 origin_forge_world = {
 	is_origin = yes
-	description = "origin_forge_world_tip"
+	description = "origin_forge_world_desc"
 
 	potential = { always = yes }
 	possible = {
