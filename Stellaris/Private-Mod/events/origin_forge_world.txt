@@ -11,11 +11,11 @@ country_event = {
 
 	immediate = {
 		#give some tech to generate energy and make the Legendary Forge perk easier to reach
-		give_technology = { tech = tech_mine_betharian	message = no }
-		give_technology = { tech = tech_mining_3	message = no }
-		give_technology = { tech = tech_alloys_2	message = no }
-		give_technology = { tech = tech_mine_living_metal	message = no }
-		give_technology = { tech = tech_volcano	message = no }
+		give_technology = {	message = no tech = tech_mine_betharian	}
+		give_technology = {	message = no tech = tech_mining_3 }
+		give_technology = {	message = no tech = tech_alloys_2 }
+		give_technology = {	message = no tech = tech_mine_living_metal }
+		give_technology = {	message = no tech = tech_volcano }
 
 		capital_scope = {
 			#add some deposits, only source of energy

@@ -21,6 +21,11 @@
  erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
  erik_trait_avian_tip: "Traits specific to the evil birds."
 
+ #civics
+ erik_civic_carnivore: "Shepherds"
+ erik_civic_carnivore_desc: "This species grew up hunting another species on the planet and still loves the thrill of the hunt.  They don't waste any part of their food."
+ erik_civic_carnivore_tip: "Increase the amount of nutrition from livestock, as well as making some trinkets from their inedible bits."
+
  #origins
  origin_forge_world: "Forge World"
  origin_forge_world_desc: "This species evolved on a molten planet, and somehow made it a home."
