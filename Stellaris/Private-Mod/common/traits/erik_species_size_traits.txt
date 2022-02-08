@@ -1,0 +1,230 @@
+#Size changes
+## Huge (2)
+trait_huge_bio = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_large_bio" "trait_small_bio" "trait_vsmall_bio"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 2
+		planet_pops_upkeep_mult = 0.75
+		army_attack_damage_mult = 0.25
+		army_attack_health_mult = 1
+		planet_livestock_food_produces_add = 5
+	}
+	slave_cost = {
+		energy = 250
+	}
+}
+trait_huge_lithoid = {
+	cost = 2
+	allowed_archetypes = { LITHOID PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_large_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 2
+		planet_pops_upkeep_mult = 0.75
+		army_attack_damage_mult = 0.25
+		army_attack_health_mult = 1
+		planet_livestock_minerals_produces_add = 5
+	}
+	slave_cost = {
+		energy = 250
+	}
+}
+trait_huge_machine = {
+	cost = 2
+	allowed_archetypes = { MACHINE PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_large_machine" "trait_small_machine" "trait_vsmall_machine"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 2
+		planet_pops_upkeep_mult = 0.75
+		army_attack_damage_mult = 0.25
+		army_attack_health_mult = 1
+	}
+	slave_cost = {
+		energy = 250
+	}
+}
+##Large (1)
+trait_large_bio = {
+	cost = 1
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_bio" "trait_small_bio" "trait_vsmall_bio"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 0.5
+		planet_pops_upkeep_mult = 0.2
+		army_attack_damage_mult = 0.1
+		army_attack_health_mult = 0.5
+		planet_livestock_food_produces_add = 2
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+trait_large_lithoid = {
+	cost = 1
+	allowed_archetypes = { LITHOID PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 0.5
+		planet_pops_upkeep_mult = 0.2
+		army_attack_damage_mult = 0.1
+		army_attack_health_mult = 0.5
+		planet_livestock_minerals_produces_add = 2
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+trait_large_machine = {
+	cost = 1
+	allowed_archetypes = { MACHINE PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_machine" "trait_small_machine" "trait_vsmall_machine"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = 0.5
+		planet_pops_upkeep_mult = 0.2
+		army_attack_damage_mult = 0.1
+		army_attack_health_mult = 0.5
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+## Small (-1)
+trait_small_bio = {
+	cost = -1
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_bio" "trait_large_bio" "trait_vsmall_bio"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.25
+		planet_pops_upkeep_mult = -0.1
+		army_attack_damage_mult = -0.1
+		army_attack_health_mult = -0.25
+		planet_livestock_food_produces_add = -1
+	}
+	slave_cost = {
+		energy = 25
+	}
+}
+trait_small_lithoid = {
+	cost = -1
+	allowed_archetypes = { LITHOID PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_lithoid" "trait_large_lithoid" "trait_vsmall_lithoid"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.25
+		planet_pops_upkeep_mult = -0.1
+		army_attack_damage_mult = -0.1
+		army_attack_health_mult = -0.25
+		planet_livestock_minerals_produces_add = -1
+	}
+	slave_cost = {
+		energy = 25
+	}
+}
+trait_small_machine = {
+	cost = -1
+	allowed_archetypes = { MACHINE PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_machine" "trait_large_machine" "trait_vsmall_machine"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.25
+		planet_pops_upkeep_mult = -0.1
+		army_attack_damage_mult = -0.1
+		army_attack_health_mult = -0.25
+	}
+	slave_cost = {
+		energy = 25
+	}
+}
+## Very Small (-2)
+trait_vsmall_bio = {
+	cost = -2
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_bio" "trait_large_bio" "trait_small_bio"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.5
+		planet_pops_upkeep_mult = -0.25
+		army_attack_damage_mult = -0.25
+		army_attack_health_mult = -0.5
+		planet_livestock_food_produces_add = -2
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+trait_vsmall_lithoid = {
+	cost = -2
+	allowed_archetypes = { LITHOID PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_lithoid" "trait_large_lithoid" "trait_small_lithoid"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.5
+		planet_pops_upkeep_mult = -0.25
+		army_attack_damage_mult = -0.25
+		army_attack_health_mult = -0.5
+		planet_livestock_minerals_produces_add = -2
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+trait_vsmall_machine = {
+	cost = -2
+	allowed_archetypes = { MACHINE PRESAPIENT }
+	potential_crossbreeding_chance = 0.5
+	opposites = {
+		"trait_huge_machine" "trait_large_machine" "trait_small_machine"
+	}
+	modification = no
+	modifier = {
+		pop_housing_usage_mult = -0.5
+		planet_pops_upkeep_mult = -0.25
+		army_attack_damage_mult = -0.25
+		army_attack_health_mult = -0.5
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
