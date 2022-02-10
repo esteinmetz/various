@@ -3,7 +3,7 @@
 trait_huge_bio = {
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_bio" "trait_small_bio" "trait_vsmall_bio"
 	}
@@ -22,7 +22,7 @@ trait_huge_bio = {
 trait_huge_lithoid = {
 	cost = 2
 	allowed_archetypes = { LITHOID PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
 	}
@@ -41,7 +41,7 @@ trait_huge_lithoid = {
 trait_huge_machine = {
 	cost = 2
 	allowed_archetypes = { MACHINE PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
@@ -60,7 +60,7 @@ trait_huge_machine = {
 trait_large_bio = {
 	cost = 1
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_bio" "trait_small_bio" "trait_vsmall_bio"
 	}
@@ -79,7 +79,7 @@ trait_large_bio = {
 trait_large_lithoid = {
 	cost = 1
 	allowed_archetypes = { LITHOID PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
 	}
@@ -98,7 +98,7 @@ trait_large_lithoid = {
 trait_large_machine = {
 	cost = 1
 	allowed_archetypes = { MACHINE PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
@@ -118,7 +118,7 @@ trait_large_machine = {
 trait_small_bio = {
 	cost = -1
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_bio" "trait_large_bio" "trait_vsmall_bio"
 	}
@@ -137,7 +137,7 @@ trait_small_bio = {
 trait_small_lithoid = {
 	cost = -1
 	allowed_archetypes = { LITHOID PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_lithoid" "trait_large_lithoid" "trait_vsmall_lithoid"
 	}
@@ -156,7 +156,7 @@ trait_small_lithoid = {
 trait_small_machine = {
 	cost = -1
 	allowed_archetypes = { MACHINE PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_vsmall_machine"
 	}
@@ -175,7 +175,7 @@ trait_small_machine = {
 trait_vsmall_bio = {
 	cost = -2
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_bio" "trait_large_bio" "trait_small_bio"
 	}
@@ -194,7 +194,7 @@ trait_vsmall_bio = {
 trait_vsmall_lithoid = {
 	cost = -2
 	allowed_archetypes = { LITHOID PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_lithoid" "trait_large_lithoid" "trait_small_lithoid"
 	}
@@ -213,7 +213,7 @@ trait_vsmall_lithoid = {
 trait_vsmall_machine = {
 	cost = -2
 	allowed_archetypes = { MACHINE PRESAPIENT }
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_small_machine"
 	}
