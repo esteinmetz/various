@@ -2,7 +2,6 @@
 erik_trait_traditional = {
 	cost = 0
 	randomized = no
-	custom_tooptip = ERIK_TRAIT_TRADITIONAL_TIP
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
@@ -24,6 +23,18 @@ erik_trait_arthropod = {
 	}
 }
 
+erik_trait_avian = {
+	cost = 1
+	randomized = yes
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class  = { AVI }
+	modifier = {
+		ship_accuracy_add = 10
+		army_health = -0.1
+	}
+}
+
 erik_trait_molluscoid = {
 	cost = 1
 	randomized = yes
@@ -35,14 +46,13 @@ erik_trait_molluscoid = {
 	}
 }
 
-erik_trait_avian = {
+erik_trait_reptile = {
 	cost = 1
 	randomized = yes
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL }
-	species_class  = { AVI }
+	species_class  = { REP }
 	modifier = {
-		ship_accuracy_add = 10
-		army_health = -0.1
+		planet_jobs_food_upkeep_mult = -0.2
 	}
 }

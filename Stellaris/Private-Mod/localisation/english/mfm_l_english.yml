@@ -4,22 +4,52 @@
  TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces £exotic_gases£ §Y$exotic_gases$§! per month."
  TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces £rare_crystals£ §Y$rare_crystals$§! per month."
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces £volatile_motes£ §Y$volatile_motes$§! per month."
- 
+
+ #traits - species_class 
  erik_trait_traditional: "Erik's Slave Race"
  erik_trait_traditional_desc: "This is a test to help prioritize a slave race for neophytes for Necroids."
- erik_trait_traditional_tip: "This is a test to help prioritize a slave race for neophytes for Necroids."
 
  erik_trait_arthropod: "Arthropods"
  erik_trait_arthropod_desc: "Arthropods are resilient and quick breeders, but don't live long."
  erik_trait_arthropod_tip: "Traits specific to Arthropods"
 
+ erik_trait_avian: "Bird People"
+ erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
+ erik_trait_avian_tip: "Traits specific to the evil birds."
+
  erik_trait_molluscoid: "Molluscoids"
  erik_trait_molluscoid_desc: "Molluscoids often produce a hard outer shell that can be used in other places."
  erik_trait_molluscoid_tip: "Traits specific to Molluscoids"
 
- erik_trait_avian: "Bird People"
- erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
- erik_trait_avian_tip: "Traits specific to the evil birds."
+ erik_trait_reptile: "Reptilian Hunting"
+ erik_trait_reptile_desc: "Reptiles cultures encourages everyone to hunt, even if just for the thrills, this leads to them needing less food than others."
+ erik_trait_reptile_tip: "Traits specific to Reptiles"
+
+ #traits - sizes
+ trait_huge_bio: "Size: Huge"
+ trait_huge_bio_desc: "This species evolved larger than a standard human.  About the size of an elephant, give or take."
+ trait_huge_lithoid: "Size: Huge"
+ trait_huge_lithoid_desc: "This species evolved larger than a standard human.  About the size of an elephant, give or take."
+ trait_huge_machine: "Size: Huge"
+ trait_huge_machine_desc: "This species evolved larger than a standard human.  About the size of an elephant, give or take."
+ trait_large_bio: "Size: Large"
+ trait_large_bio_desc: "This species evolved larger than a standard human.  About the size of a horse, give or take."
+ trait_large_lithoid: "Size: Large"
+ trait_large_lithoid_desc: "This species evolved larger than a standard human.  About the size of a horse, give or take."
+ trait_large_machine: "Size: Large"
+ trait_large_machine_desc: "This species evolved larger than a standard human.  About the size of a horse, give or take."
+ trait_small_bio: "Size: Small"
+ trait_small_bio_desc: "This species evolved smaller than a standard human.  About the size of a dog, give or take."
+ trait_small_lithoid: "Size: Small"
+ trait_small_lithoid_desc: "This species evolved smaller than a standard human.  About the size of a dog, give or take."
+ trait_small_machine: "Size: Small"
+ trait_small_machine_desc: "This species evolved smaller than a standard human.  About the size of a dog, give or take."
+ trait_vsmall_bio: "Size: Very Small"
+ trait_vsmall_bio_desc: "This species evolved smaller than a standard human.  About the size of a parakeet, give or take."
+ trait_vsmall_lithoid: "Size: Very Small"
+ trait_vsmall_lithoid_desc: "This species evolved smaller than a standard human.  About the size of a parakeet, give or take."
+ trait_vsmall_machine: "Size: Very Small"
+ trait_vsmall_machine_desc: "This species evolved smaller than a standard human.  About the size of a parakeet, give or take."
 
  #civics
  erik_civic_carnivore: "Shepherds"
