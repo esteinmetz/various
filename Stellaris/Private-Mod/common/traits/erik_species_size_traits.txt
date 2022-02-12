@@ -13,7 +13,7 @@ trait_huge_bio = {
 		planet_pops_upkeep_mult = 0.75
 		army_attack_damage_mult = 0.25
 		army_attack_health_mult = 1
-		planet_livestock_food_produces_add = 5
+		planet_livestock_food_produces_mult = 0.5
 	}
 	slave_cost = {
 		energy = 250
@@ -32,7 +32,7 @@ trait_huge_lithoid = {
 		planet_pops_upkeep_mult = 0.75
 		army_attack_damage_mult = 0.25
 		army_attack_health_mult = 1
-		planet_livestock_minerals_produces_add = 5
+		planet_livestock_minerals_produces_mult = 0.5
 	}
 	slave_cost = {
 		energy = 250
@@ -70,7 +70,7 @@ trait_large_bio = {
 		planet_pops_upkeep_mult = 0.2
 		army_attack_damage_mult = 0.1
 		army_attack_health_mult = 0.5
-		planet_livestock_food_produces_add = 2
+		planet_livestock_food_produces_mult = 0.25
 	}
 	slave_cost = {
 		energy = 50
@@ -89,7 +89,7 @@ trait_large_lithoid = {
 		planet_pops_upkeep_mult = 0.2
 		army_attack_damage_mult = 0.1
 		army_attack_health_mult = 0.5
-		planet_livestock_minerals_produces_add = 2
+		planet_livestock_minerals_produces_mult = 0.25
 	}
 	slave_cost = {
 		energy = 50
@@ -124,11 +124,11 @@ trait_small_bio = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.25
+		pop_housing_usage_mult = -0.1
 		planet_pops_upkeep_mult = -0.1
 		army_attack_damage_mult = -0.1
 		army_attack_health_mult = -0.25
-		planet_livestock_food_produces_add = -1
+		planet_livestock_food_produces_mult = -0.25
 	}
 	slave_cost = {
 		energy = 25
@@ -143,11 +143,11 @@ trait_small_lithoid = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.25
+		pop_housing_usage_mult = -0.1
 		planet_pops_upkeep_mult = -0.1
 		army_attack_damage_mult = -0.1
 		army_attack_health_mult = -0.25
-		planet_livestock_minerals_produces_add = -1
+		planet_livestock_minerals_produces_mult = -0.25
 	}
 	slave_cost = {
 		energy = 25
@@ -162,7 +162,7 @@ trait_small_machine = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.25
+		pop_housing_usage_mult = -0.1
 		planet_pops_upkeep_mult = -0.1
 		army_attack_damage_mult = -0.1
 		army_attack_health_mult = -0.25
@@ -181,11 +181,11 @@ trait_vsmall_bio = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.5
+		pop_housing_usage_mult = -0.25
 		planet_pops_upkeep_mult = -0.25
 		army_attack_damage_mult = -0.25
 		army_attack_health_mult = -0.5
-		planet_livestock_food_produces_add = -2
+		planet_livestock_food_produces_mult = -0.5
 	}
 	slave_cost = {
 		energy = 50
@@ -200,11 +200,11 @@ trait_vsmall_lithoid = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.5
+		pop_housing_usage_mult = -0.25
 		planet_pops_upkeep_mult = -0.25
 		army_attack_damage_mult = -0.25
 		army_attack_health_mult = -0.5
-		planet_livestock_minerals_produces_add = -2
+		planet_livestock_minerals_produces_mult = -0.5
 	}
 	slave_cost = {
 		energy = 50
@@ -219,7 +219,7 @@ trait_vsmall_machine = {
 	}
 	modification = no
 	modifier = {
-		pop_housing_usage_mult = -0.5
+		pop_housing_usage_mult = -0.25
 		planet_pops_upkeep_mult = -0.25
 		army_attack_damage_mult = -0.25
 		army_attack_health_mult = -0.5

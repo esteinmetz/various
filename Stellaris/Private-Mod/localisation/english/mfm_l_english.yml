@@ -13,13 +13,17 @@
  erik_trait_arthropod_desc: "Arthropods are resilient and quick breeders, but don't live long."
  erik_trait_arthropod_tip: "Traits specific to Arthropods"
 
+ erik_trait_avian: "Bird People"
+ erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
+ erik_trait_avian_tip: "Traits specific to the evil birds."
+
  erik_trait_molluscoid: "Molluscoids"
  erik_trait_molluscoid_desc: "Molluscoids often produce a hard outer shell that can be used in other places."
  erik_trait_molluscoid_tip: "Traits specific to Molluscoids"
 
- erik_trait_avian: "Bird People"
- erik_trait_avian_desc: "Birds have millenia of practice with 3d combat, but also have hollow bones."
- erik_trait_avian_tip: "Traits specific to the evil birds."
+ erik_trait_reptile: "Reptilian Hunting"
+ erik_trait_reptile_desc: "Reptiles cultures encourages everyone to hunt, even if just for the thrills, this leads to them needing less food than others."
+ erik_trait_reptile_tip: "Traits specific to Reptiles"
 
  #traits - sizes
  trait_huge_bio: "Size: Huge"

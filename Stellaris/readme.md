@@ -11,9 +11,10 @@ Subscribe on Steam...otherwise download and install manually? <https://steamcomm
 Either way, load it last.  It includes patches and resources from other mods.
 
 ### Dependancies
+
 Name | URL | Resources Used/Modified
 ---- | --- | -----------------------
-Unique Ascension Perks | https://steamcommunity.com/sharedfiles/filedetails/?id=1693982756 | Legendary Forge (used for origin, fixed district not adding buildings)
+Unique Ascension Perks | <https://steamcommunity.com/sharedfiles/filedetails/?id=1693982756> | Legendary Forge (used for origin, fixed district not adding buildings)
 
 ## Mod Descriptions
 
@@ -29,12 +30,15 @@ Erik's Slave Race | Minutely add unity, to help focus which necroid slave specie
 Arthropods | Make arthropods breed faster, but have lower lifespans. | erik_trait_arthropod | N/A
 Bird People | Make birds better in space combat, but with a lower army health. | erik_trait_avian | N/A
 Molluscoids | Molluscoids produce more alloys. | erik_trait_molluscoid | Would like to change this to make them passively produce alloys no matter the job.
+Reptiles | Reptiles require less food than others. | erik_trait_reptile | N/A
+---- | ------- | -- | -----
+Sizes | To serve as benefits or hindrances based on size. | trait_SIZE_TYPE | N/A
 
 ## New Civics
 
 Name | Description | Notes
 ---- | ----------- | -----
-Shepherd | Civic to allow non-xenophobes to use livestock. | 
+Shepherd | Civic to allow non-xenophobes to use livestock. | N/A
 
 ## New Origins
 
@@ -44,9 +48,10 @@ Forge World | You begin on a Legendary Forge world. | This is great for minerals
 
 ## Other Changes
 
+1. Max trait picks = 99.
 1. Increase lithoid passive production from 0.01 to 0.05.
 1. Update livestock to allow livestock to fill worker roles.
 
 ## Upcoming changes
 
-1. Add reptile traits (can this be them getting more food from livestock?).
+1. Moar traits!
