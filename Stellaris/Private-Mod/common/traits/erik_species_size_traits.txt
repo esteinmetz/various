@@ -47,8 +47,8 @@ trait_huge_machine = {
 	opposites = {
 		"trait_large_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
-	species_possible_add = { always = no }
-	species_possible_remove = { always = no }
+	species_possible_add = { always = yes }
+	species_possible_remove = { always = yes }
 	modifier = {
 		pop_housing_usage_mult = 2
 		planet_pops_upkeep_mult = 0.75
@@ -107,8 +107,8 @@ trait_large_machine = {
 	opposites = {
 		"trait_huge_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
-	species_possible_add = { always = no }
-	species_possible_remove = { always = no }
+	species_possible_add = { always = yes }
+	species_possible_remove = { always = yes }
 	modifier = {
 		pop_housing_usage_mult = 0.5
 		planet_pops_upkeep_mult = 0.2
@@ -168,8 +168,8 @@ trait_small_machine = {
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_vsmall_machine"
 	}
-	species_possible_add = { always = no }
-	species_possible_remove = { always = no }
+	species_possible_add = { always = yes }
+	species_possible_remove = { always = yes }
 	modifier = {
 		pop_housing_usage_mult = -0.1
 		planet_pops_upkeep_mult = -0.1
@@ -228,8 +228,8 @@ trait_vsmall_machine = {
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_small_machine"
 	}
-	species_possible_add = { always = no }
-	species_possible_remove = { always = no }
+	species_possible_add = { always = yes }
+	species_possible_remove = { always = yes }
 	modifier = {
 		pop_housing_usage_mult = -0.25
 		planet_pops_upkeep_mult = -0.25
