@@ -14,7 +14,7 @@ Either way, load it last.  It includes patches and resources from other mods.
 
 Name | URL | Resources Used/Modified
 ---- | --- | -----------------------
-Unique Ascension Perks | <https://steamcommunity.com/sharedfiles/filedetails/?id=1693982756> | Legendary Forge (used for origin, fixed district not adding buildings)
+Unique Ascension Perks Patch | <https://steamcommunity.com/sharedfiles/filedetails/?id=2779645384> | Legendary Forge (used for origin, fixed district not adding buildings)
 
 ## Mod Descriptions
 
@@ -49,8 +49,9 @@ Forge World | You begin on a Legendary Forge world. | This is great for minerals
 ## Other Changes
 
 1. Max trait picks = 99.
-1. Increase lithoid passive production from 0.01 to 0.05.
+1. Increase lithoid/toxoid passive production.
 1. Update livestock to allow livestock to fill worker roles.
+1. Increase maximum leader level cap (but not how the cap increases).
 
 ## Upcoming changes
 

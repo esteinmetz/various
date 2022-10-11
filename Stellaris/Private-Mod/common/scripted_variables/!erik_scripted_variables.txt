@@ -1,1 +1,4 @@
+#original 0.01
 @lithoid_trait_resource_production = 0.04
+#original 0.02
+@inorganic_breath = 0.04
