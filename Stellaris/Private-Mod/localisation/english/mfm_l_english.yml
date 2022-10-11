@@ -1,9 +1,10 @@
 ﻿l_english:
 
  #species traits, patches then my originals
- TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces £exotic_gases£ §Y$exotic_gases$§! per month."
- TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces £rare_crystals£ §Y$rare_crystals$§! per month."
- TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces £volatile_motes£ §Y$volatile_motes$§! per month."
+ TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces §Y$@lithoid_trait_resource_production$§! £exotic_gases£ §Y$exotic_gases$§! per month."
+ TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces §Y$@lithoid_trait_resource_production$§! £rare_crystals£ §Y$rare_crystals$§! per month."
+ TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces §Y$@lithoid_trait_resource_production$§! £volatile_motes£ §Y$volatile_motes$§! per month."
+ inorganic_breath_tooltip: "Each pop working as a slave or better produces §Y$@inorganic_breath$§! £exotic_gases£ §Y$exotic_gases$§! per month."
 
  #traits - species_class 
  erik_trait_traditional: "Erik's Slave Race"

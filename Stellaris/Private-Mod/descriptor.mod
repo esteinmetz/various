@@ -4,5 +4,5 @@ tags={
 	"Species"
 }
 name="More Trait Picks"
-supported_version="3.4.*"
+supported_version="3.5.*"
 remote_file_id="2703916017"
