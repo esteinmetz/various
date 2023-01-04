@@ -53,6 +53,6 @@ erik_trait_reptile = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class  = { REP }
 	modifier = {
-		planet_jobs_food_upkeep_mult = -0.2
+		planet_pops_food_upkeep_mult = -0.3
 	}
 }
