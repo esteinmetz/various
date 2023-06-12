@@ -3,6 +3,7 @@ erik_trait_traditional = {
 	cost = 0
 	randomized = no
 	potential_crossbreeding_chance = 1.0
+	ai_weight = { weight = 0 }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.0001

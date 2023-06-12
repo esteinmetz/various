@@ -1,16 +1,17 @@
 #Size changes
 ## Huge (2)
 trait_huge_bio = {
-	cost = 2
+	cost = -4
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_bio" "trait_small_bio" "trait_vsmall_bio"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 5 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
-		pop_housing_usage_mult = 2
+		pop_housing_usage_mult = 1
 		planet_pops_upkeep_mult = 0.75
 		army_attack_damage_mult = 0.25
 		army_attack_health_mult = 1
@@ -21,16 +22,17 @@ trait_huge_bio = {
 	}
 }
 trait_huge_lithoid = {
-	cost = 2
+	cost = -4
 	allowed_archetypes = { LITHOID PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 5 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
-		pop_housing_usage_mult = 2
+		pop_housing_usage_mult = 1
 		planet_pops_upkeep_mult = 0.75
 		army_attack_damage_mult = 0.25
 		army_attack_health_mult = 1
@@ -41,16 +43,17 @@ trait_huge_lithoid = {
 	}
 }
 trait_huge_machine = {
-	cost = 2
+	cost = -4
 	allowed_archetypes = { MACHINE PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_large_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
+	ai_weight = { weight = 5 }
 	species_possible_add = { always = yes }
 	species_possible_remove = { always = yes }
 	modifier = {
-		pop_housing_usage_mult = 2
+		pop_housing_usage_mult = 1
 		planet_pops_upkeep_mult = 0.75
 		army_attack_damage_mult = 0.25
 		army_attack_health_mult = 1
@@ -61,13 +64,14 @@ trait_huge_machine = {
 }
 ##Large (1)
 trait_large_bio = {
-	cost = 1
+	cost = -2
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_bio" "trait_small_bio" "trait_vsmall_bio"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 15 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = 0.5
@@ -81,13 +85,14 @@ trait_large_bio = {
 	}
 }
 trait_large_lithoid = {
-	cost = 1
+	cost = -2
 	allowed_archetypes = { LITHOID PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_lithoid" "trait_small_lithoid" "trait_vsmall_lithoid"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 15 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = 0.5
@@ -101,12 +106,13 @@ trait_large_lithoid = {
 	}
 }
 trait_large_machine = {
-	cost = 1
+	cost = -2
 	allowed_archetypes = { MACHINE PRESAPIENT }
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_huge_machine" "trait_small_machine" "trait_vsmall_machine"
 	}
+	ai_weight = { weight = 15 }
 	species_possible_add = { always = yes }
 	species_possible_remove = { always = yes }
 	modifier = {
@@ -128,7 +134,8 @@ trait_small_bio = {
 	opposites = {
 		"trait_huge_bio" "trait_large_bio" "trait_vsmall_bio"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 15 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = -0.1
@@ -148,7 +155,8 @@ trait_small_lithoid = {
 	opposites = {
 		"trait_huge_lithoid" "trait_large_lithoid" "trait_vsmall_lithoid"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 15 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = -0.1
@@ -168,6 +176,7 @@ trait_small_machine = {
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_vsmall_machine"
 	}
+	ai_weight = { weight = 15 }
 	species_possible_add = { always = yes }
 	species_possible_remove = { always = yes }
 	modifier = {
@@ -188,7 +197,8 @@ trait_vsmall_bio = {
 	opposites = {
 		"trait_huge_bio" "trait_large_bio" "trait_small_bio"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 5 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = -0.25
@@ -208,7 +218,8 @@ trait_vsmall_lithoid = {
 	opposites = {
 		"trait_huge_lithoid" "trait_large_lithoid" "trait_small_lithoid"
 	}
-	species_possible_add = { always = no }
+	ai_weight = { weight = 5 }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	modifier = {
 		pop_housing_usage_mult = -0.25
@@ -228,6 +239,7 @@ trait_vsmall_machine = {
 	opposites = {
 		"trait_huge_machine" "trait_large_machine" "trait_small_machine"
 	}
+	ai_weight = { weight = 5 }
 	species_possible_add = { always = yes }
 	species_possible_remove = { always = yes }
 	modifier = {
