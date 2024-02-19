@@ -1,0 +1,187 @@
+# updated 07/17/2023
+# So only the Endless Horizon origin can build them on black holes.
+# Also needed for the orbit_distance_offset (black holes are usually bigger than suns).
+elec_aurora_habitat_bh = {
+	entity = "elec_aurora_habitat_entity"
+	construction_entity = "elec_aurora_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = 0 }
+	rotate_to_center = yes
+	scale_offset = yes
+	build_time = 1200
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 2000
+			unity = 50
+			influence = 50
+		}
+	}
+	construction_blocks_and_blocked_by = self_type # to avoid spamming multiple constructions at once, rest is done via timed country flag (5 years)
+	potential = {
+		OR = {
+			has_origin = origin_elec_endless_horizon
+			has_origin = origin_elec_extradimensionals
+		}
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_recent_aurora"
+			from = { NOT = { has_country_flag = built_recent_aurora_habitat } }
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+		}
+	# Usually black holes are not in bi/trinary systems, but I keep this option for modded/event systems.
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star_bh"
+				is_star = yes
+				OR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_whitte_hole
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+		# I keep it for modded systems.
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					solar_system = { has_star_flag = dyson_sphere_built }
+				}
+			}
+		}
+	}
+	# AI can only play the 'Empire of the Sun' origin.
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 10
+			from = { num_owned_planets < 5 }
+		}
+		modifier = {
+			add = -250
+			starbase = { NOT = { has_starbase_size >= starbase_starport } }
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
+		}
+		modifier = {
+			factor = 0
+			any_neighbor_system = {
+				exists = owner
+				owner = { NOT = { is_same_value = from } }
+			}
+		}
+	}
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_elec_aurora"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 180
+			orbit_distance_offset = 34
+			size = 20
+			has_ring = no
+			init_effect = {
+				set_name = "Aurora-Habitat"
+				set_planet_entity = {
+					entity = "elec_aurora_habitat_01_entity"
+					graphical_culture = fromfrom
+				}
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				clear_blockers = yes
+				set_planet_flag = megastructure
+				set_planet_flag = habitat
+			# BlackHole
+				if = {
+					limit = {
+						fromfrom.planet = {
+							is_star = yes
+							is_planet_class = pc_black_hole
+						}
+					}
+					set_planet_flag = elec_aurora_pc_blackhole
+					add_modifier = { modifier = elec_aurora_pc_blackhole_mod }
+				}
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+			save_event_target_as = habitat_planet
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+		remove_megastructure = fromfrom
+		from = { country_event = { id = elec.2 } }
+		from = { set_timed_country_flag = { flag = built_recent_aurora_habitat days = 1825 } }
+	}
+	show_in_outliner = no
+}

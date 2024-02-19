@@ -15,6 +15,7 @@ Either way, load it last.  It includes patches and resources from other mods.
 Name | URL | Resources Used/Modified
 ---- | --- | -----------------------
 Unique Ascension Perks Patch | <https://steamcommunity.com/sharedfiles/filedetails/?id=2779645384> | Legendary Forge (used for origin, fixed district not adding buildings)
+Electroids Species Pack | <https://steamcommunity.com/sharedfiles/filedetails/?id=2871561309> | elec_aurora_habitat_bh (allow it to work w/ white holes)
 
 ## Mod Descriptions
 
