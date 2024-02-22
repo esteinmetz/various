@@ -1,2 +1,8 @@
-#Forge World Origin
-on_game_start_country = { events = { namespace_origin_forge_world.1 } }
+on_game_start_country = {
+	events = {
+		#Forge World Origin
+		namespace_origin_forge_world.1
+		#Nomads (Space Industry aka civilian_industries
+		namespace_origin_nomadic_fleet.1
+	}
+}
