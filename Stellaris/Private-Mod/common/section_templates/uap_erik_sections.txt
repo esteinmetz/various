@@ -1,0 +1,207 @@
+#Added for 3.10
+#TODO: crisis ships - Cheaper nanites, but bonus aux slot or something?
+@section_alloy_cost = 30
+@section_nanite_cost = 100
+
+##################
+# Defensive Platform
+##################
+ship_section_template = {
+	key = "NANITE_LIGHT_MILITARY_STATION_SECTION"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { gunship }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_nanite_ship_section }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 5
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_alloy_cost
+			nanites = @section_nanite_cost
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+	}
+}
+
+ship_section_template = {
+	key = "NANITE_MEDIUM_MILITARY_STATION_SECTION"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { gunship }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_medium_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { tech_nanite_ship_section }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	medium_utility_slots = 5
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_alloy_cost
+			nanites = @section_nanite_cost
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+	}
+}
+
+ship_section_template = {
+	key = "NANITE_HEAVY_MILITARY_STATION_SECTION"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { artillery }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_heavy_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_nanite_ship_section }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	medium_utility_slots = 5
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_alloy_cost
+			nanites = @section_nanite_cost
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+	}
+}
+
+ship_section_template = {
+	key = "NANITE_HANGAR_MILITARY_STATION_SECTION"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { carrier }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_hangar_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_nanite_ship_section }
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_02"
+	}
+
+	medium_utility_slots = 5
+	aux_utility_slots = 1
+
+	ai_weight = {
+		factor = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_alloy_cost
+			nanites = @section_nanite_cost
+		}
+	}
+}
