@@ -15,6 +15,7 @@ Either way, load it last.  It includes patches and resources from other mods.
 Name | URL | Resources Used/Modified
 ---- | --- | -----------------------
 Unique Ascension Perks Patch | <https://steamcommunity.com/sharedfiles/filedetails/?id=2779645384> | Legendary Forge (used for origin, fixed district not adding buildings)
+Electroids Species Pack | <https://steamcommunity.com/sharedfiles/filedetails/?id=2871561309> | elec_aurora_habitat_bh (allow it to work w/ white holes)
 
 ## Mod Descriptions
 
@@ -38,17 +39,21 @@ Sizes | To serve as benefits or hindrances based on size. | trait_SIZE_TYPE | N/
 
 Name | Description | Notes
 ---- | ----------- | -----
-Shepherd | Civic to allow non-xenophobes to use livestock. | N/A
+Shepherd | Allow non-xenophobes to use livestock. | N/A
+Hyper Relays | Start the game with Hyper Relays. | Only available at start.
 
 ## New Origins
 
 Name | Description | Notes
 ---- | ----------- | -----
 Forge World | You begin on a Legendary Forge world. | This is great for minerals, alloys, ships, and robots.  Non-biological species only.
+Nomads | Start with Space Industrialization (factory ships) and habitats. | Start w/ 1 low-powered one.  Must select the AP and research it ASAP.
+Cloaking | Start w/ cloaking tech, gain bonuses to Espionage/cloaking. | Still testing.  May change drastically.
 
 ## Other Changes
 
 1. Max trait picks = 99.
+1. Max favors stored = 25.
 1. Increase lithoid/toxoid passive production.
 1. Update livestock to allow livestock to fill worker roles.
 1. Increase maximum leader level cap (but not how the cap increases).

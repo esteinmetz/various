@@ -1,7 +1,7 @@
 #NEW Origin for starting on a forge world
 origin_forge_world = {
 	is_origin = yes
-	description = "origin_forge_world_desc"
+	description = "origin_forge_world_tip"
 
 	potential = { always = yes }
 	possible = {
@@ -10,9 +10,52 @@ origin_forge_world = {
 
 	starting_colony = pc_legendary_forge
 	habitability_preference = pc_molten
-	max_once_global = yes
 
 	modifier = {
 		planet_jobs_minerals_produces_mult = 0.1
+	}
+}
+
+#NEW start w/ Civilian Industries
+#added in 3.10
+#TODO: couldn't figure out how to give actual base tech or the AP itself.
+origin_nomadic_fleet = {
+	is_origin = yes
+	description = "origin_nomadic_fleet_tip"
+
+	potential = {
+		always = yes
+	}
+	habitability_preference = pc_habitat
+	starting_colony = pc_habitat
+	initializers = { void_dweller_system sol_system_void_dweller_system }
+
+	modifier = {
+		ascension_perks_add = 1
+	}
+
+	traits = {
+		trait = trait_void_dweller_1
+	}
+}
+
+#NEW start w/ Cloaking
+#added in 3.10
+origin_cloaked = {
+	is_origin = yes
+	description = "origin_cloaked_tip"
+
+	potential = {
+		always = yes
+	}
+
+	modifier = {
+		ship_cloaking_detection_add = 1 #additive whole numbers? 1.1
+		espionage_operation_difficulty_mult = -0.1
+		espionage_operation_cost_mult = -0.1
+		ship_cloaking_strength_add = 1
+		first_contact_clues_add = 1 #additive whole number
+		first_contact_defense_add = 1 #additive whole number
+		first_contact_speed_mult = 1.1
 	}
 }

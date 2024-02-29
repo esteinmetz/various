@@ -1,0 +1,45 @@
+namespace = namespace_origin_nomadic_fleet
+
+country_event = {
+	id = namespace_origin_nomadic_fleet.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_nomadic_fleet
+	}
+
+	immediate = {
+		#suboptimal, giving the tech directly doesn't work here for some reason
+		add_resource = {
+			engineering_research = 2000
+		}
+
+		#Remove construction ship
+		every_owned_fleet = {
+			limit = {
+				is_ship_class = shipclass_constructor
+			}
+			delete_fleet = {
+				target = this
+				kill_leader = no
+			}
+		}
+		#replace with basic factory ship
+		capital_scope = {
+			save_event_target_as = spawn_planet
+		}
+		create_fleet = { name = "Constructor 01" }
+		last_created_fleet = {
+			set_owner = root
+			create_ship_design = {
+				design = "NAME_Civilian Transport - Basic"
+				ftl = root
+			}
+			create_ship = {
+				design = last_created_design
+			}
+			set_location = event_target:spawn_planet
+		}
+	}
+}

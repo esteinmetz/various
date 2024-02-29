@@ -1,0 +1,32 @@
+#modified from Unique Perks (id: 1693982756) to allow for origin
+#added in 3.10
+ap_civilian_activities = {
+	possible = {
+		OR = {
+			AND = {
+				custom_tooltip = { fail_text = "requires_independence" is_subject = no }
+				custom_tooltip = { fail_text = "ap_civilian_activities_req_1" has_technology = tech_cold_fusion_power }
+				custom_tooltip = { fail_text = "ap_civilian_activities_req_2" has_technology = tech_hyper_drive_2 }
+			}
+			custom_tooltip = { fail_text = "requires Space Industrialization" has_origin = "origin_nomadic_fleet" }
+#			has_origin = "origin_nomadic_fleet"
+		}
+	}
+	modifier = { }
+	on_enabled = {
+		custom_tooltip = "ap_civilian_activities_tooltip"
+		hidden_effect = {
+			country_event = { id = UniqueAscensionPerksEvents.260 days = 1 }
+		}
+	}
+	potential = {
+		NOT = { has_ascension_perk = ap_civilian_activities }
+		OR = {
+			is_ai = no
+			event_target:global_event_country = {
+				check_variable = { which = ap_civilian_activities value > 0 }
+			}
+		}		# because ai_weight doesn't work
+	}
+	ai_weight = { factor = event_target:global_event_country.ap_civilian_activities }
+}

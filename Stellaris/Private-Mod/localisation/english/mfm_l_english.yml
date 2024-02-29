@@ -53,11 +53,33 @@
   trait_vsmall_machine_desc: "This species evolved smaller than a standard human.  About the size of a parakeet, give or take."
 
   #civics
+  ##We eat people
   erik_civic_carnivore: "Shepherds"
   erik_civic_carnivore_desc: "This species grew up hunting another species on the planet and still loves the thrill of the hunt.  They don't waste any part of their food."
   erik_civic_carnivore_tip: "Increase the amount of nutrition from livestock, as well as making some trinkets from their inedible bits."
+  ##Hyper Relays
+  erik_civic_relays: "Hyper Relays"
+  erik_civic_relays_desc: "The species designed a theoretical way to quickly travel between nearby stars, but now needs to test it."
+  erik_civic_relays_tip: "You find a rare crystal deposit and Hyper Relay tech to begin your expansion."
 
   #origins
+  ##Forge World
   origin_forge_world: "Forge World"
   origin_forge_world_desc: "This species evolved on a molten planet, and somehow made it a home."
-  origin_forge_world_tip: ""
+  origin_forge_world_tip: "-Lightly improved mineral production.$NEW_LINE$-Adds some tech/deposits to make it possible to survive."
+  ##Nomads
+  origin_nomadic_fleet: "Nomads"
+  origin_nomadic_fleet_desc: "Something happened, causing this species to leave their origin planet before the planet exploded.  Since then, they've developed ways of surviving just in their ships."
+  origin_nomadic_fleet_tip: "NOTES:$NEW_LINE$-immediately add the Space Industrialization Ascension Perk when you start a game.$NEW_LINE$-I had a problem giving the factory ship tech, so instead I give the equivalent (so faster early engineering tech)."
+  ##Cloaked
+  origin_cloaked: "Cult of Shadows"
+  origin_cloaked_desc: "In the past, your planet was visited by an alien source that wasn't able to hide from you.  In response you developed cloaking technology to mask from them."
+  origin_cloaked_tip: ""
+
+  #Ship Components
+  HYPER_DRIVE_1_CIVILIAN_UAP_PATCH: "Hyper Drive 1"
+  #Ship Sections
+  NANITE_LIGHT_MILITARY_STATION_SECTION: "§GNanite§! Light Section"
+  NANITE_MEDIUM_MILITARY_STATION_SECTION: "§GNanite§! Medium Section"
+  NANITE_HEAVY_MILITARY_STATION_SECTION: "§GNanite§! Heavy Section"
+  NANITE_HANGAR_MILITARY_STATION_SECTION: "§GNanite§! Hangar Section"

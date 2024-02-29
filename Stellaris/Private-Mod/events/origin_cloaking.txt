@@ -1,0 +1,113 @@
+namespace = namespace_origin_cloaking
+
+country_event = {
+	id = namespace_origin_cloaking.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_origin = origin_cloaked
+	}
+
+	immediate = {
+		give_technology = {	message = no tech = tech_cloaking_1	}
+
+		capital_scope = {
+			add_deposit = d_exotic_gases_1
+
+			#replace planets with pre-sapient
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					if = {
+						limit = {
+							root = {
+								is_hive_empire = no
+							}
+						}
+						generate_very_early_pre_ftls_on_planet = yes
+						set_name = random
+						change_colony_foundation_date = -461
+
+						while = {
+							count = 4
+							create_army = {
+								owner = last_created_country
+								type = primitive_additional_army
+								species = last_created_country
+							}
+						}
+					}
+					else = {
+						set_planet_flag = pre_ftl_hive_mind
+						generate_very_early_pre_ftl_hive_on_planet = yes
+						set_name = random
+						change_colony_foundation_date = -461
+
+						while = {
+							count = 4
+							create_army = {
+								owner = last_created_country
+								type = primitive_additional_army
+								species = last_created_country
+							}
+						}
+					}
+				}
+			}
+			reroll_random = yes
+			closest_system = {
+				limit = { has_star_flag = neighbor_t2_second_colony }
+				max_steps = 6
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					if = {
+						limit = {
+							root = {
+								is_hive_empire = no
+							}
+						}
+						set_planet_flag = pre_ftl_hive_mind
+						generate_very_early_pre_ftls_on_planet = yes
+						set_name = random
+						change_colony_foundation_date = -1275
+
+						while = {
+							count = 4
+							create_army = {
+								owner = last_created_country
+								type = primitive_additional_army
+								species = last_created_country
+							}
+						}
+					}
+					else = {
+						generate_very_early_pre_ftl_hive_on_planet = yes
+						set_name = random
+						change_colony_foundation_date = -1275
+
+						while = {
+							count = 4
+							create_army = {
+								owner = last_created_country
+								type = primitive_additional_army
+								species = last_created_country
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

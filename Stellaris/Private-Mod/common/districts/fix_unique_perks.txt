@@ -1,4 +1,4 @@
-#this is a fix for the Unique Perks mod, the Legendary Forge planet doesn't have a way to add buildings via districts
+#this is a fix for the Unique Perks mod, the Legendary Forge planet doesn't have a way to add generate enough cgs/buildings
 district_lava_fortress = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
@@ -8,20 +8,36 @@ district_lava_fortress = {
 		planet_housing_add = 20
 		planet_max_buildings_add = 2
 	}
-	triggered_planet_modifier = { potential = { exists = owner owner = { is_gestalt = no } } 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
 		modifier = { 
 			job_miner_add = 5
 			job_artisan_add = 1
 			planet_amenities_add = 10
 		}
 	}
-	triggered_planet_modifier = { potential = { exists = owner owner = { is_gestalt = yes } }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
 		modifier = {
 			job_mining_drone_add = 5
 			planet_amenities_no_happiness_add = 10
 		}
 	}
-	resources = { category = planet_districts cost = { minerals = 500 } upkeep = { energy = 3 } produces = { minerals = 2 } }
+	resources = {
+		category = planet_districts
+		cost = { minerals = 500 }
+		upkeep = { energy = 3 }
+		produces = { minerals = 2 }
+	}
 	ai_weight = { weight = 2 }
-	ai_resource_production = { energy = 3 trigger = { always = yes } }
+	ai_resource_production = {
+		energy = 3
+		trigger = { always = yes }
+	}
 }
