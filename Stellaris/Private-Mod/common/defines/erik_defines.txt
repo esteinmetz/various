@@ -1,3 +1,4 @@
 	NGameplay = {
+		FAVOR_CAP				= 25
 		LEADER_MAX_SKILL_CAP	= 99
 	}

@@ -38,3 +38,24 @@ origin_nomadic_fleet = {
 		trait = trait_void_dweller_1
 	}
 }
+
+#NEW start w/ Cloaking
+#added in 3.10
+origin_cloaked = {
+	is_origin = yes
+	description = "origin_cloaked_tip"
+
+	potential = {
+		always = yes
+	}
+
+	modifier = {
+		ship_cloaking_detection_add = 1 #additive whole numbers? 1.1
+		espionage_operation_difficulty_mult = -0.1
+		espionage_operation_cost_mult = -0.1
+		ship_cloaking_strength_add = 1
+		first_contact_clues_add = 1 #additive whole number
+		first_contact_defense_add = 1 #additive whole number
+		first_contact_speed_mult = 1.1
+	}
+}

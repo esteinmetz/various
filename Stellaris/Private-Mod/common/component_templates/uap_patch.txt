@@ -1,0 +1,23 @@
+#from vanilla, modified to add hyper drive 1 because UAP doesn't include it 
+#  (since it normally requires Hyper Drive 2 to unlock it)
+#Added in 3.10
+utility_component_template = {
+	key = "HYPER_DRIVE_1_CIVILIAN_UAP_PATCH"
+	size = small
+	icon = "GFX_ship_part_hyper_drive_1"
+	icon_frame = 1
+	ftl = yes
+
+	ship_modifier = {
+		ship_disengage_opportunities_add = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+
+	size_restriction = { civilian_factory civilian_industrial_ship }
+	prerequisites = { "tech_hyper_drive_1" }
+	component_set = "ftl_components"
+	upgrades_to = "HYPER_DRIVE_2_CIVILIAN"
+}

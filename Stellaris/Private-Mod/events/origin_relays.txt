@@ -1,0 +1,21 @@
+namespace = namespace_civic_relays
+
+country_event = {
+	id = namespace_civic_relays.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_civic = erik_civic_relays
+	}
+
+	immediate = {
+		give_technology = {	message = no tech = tech_hyper_relays	}
+
+		capital_scope = {
+			#add some deposits, only source of energy
+			add_deposit = d_rare_crystals_1
+		}
+	}
+}

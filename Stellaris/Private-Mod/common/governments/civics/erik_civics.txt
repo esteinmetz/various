@@ -8,3 +8,15 @@ erik_civic_carnivore = {
 		planet_jobs_food_produces_mult = -0.2
 	}
 }
+
+#NEW start w/ Hyper Relays
+#added in 3.10
+erik_civic_relays = {
+	pickable_at_start = yes
+	modification = no
+	description = "erik_civic_relays_tip"
+
+	potential = {
+		always = yes
+	}
+}
